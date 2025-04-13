@@ -1,0 +1,177 @@
+/* style.css - Modernized Stylesheet for HR Portfolio */
+
+/* ========================================
+   GLOBAL STYLES
+======================================== */
+:root {
+    --primary: #002366;
+    --accent: #FFD700;
+    --text-dark: #333333;
+    --bg-light: #f8f9fa;
+    --shadow: rgba(0, 0, 0, 0.05);
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    padding: 4rem 0;
+  }
+  
+  /* ========================================
+     NAVBAR
+  ======================================== */
+  .navbar {
+    background-color: var(--primary) !important;
+    box-shadow: 0 2px 4px var(--shadow);
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+  }
+  
+  .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--accent) !important;
+  }
+  
+  /* ========================================
+     BUTTONS
+  ======================================== */
+  .btn-primary {
+    background-color: var(--primary);
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px var(--shadow);
+  }
+  
+  .btn-primary:hover {
+    background-color: #001a4d;
+  }
+  
+  .btn-warning {
+    background-color: var(--accent);
+    border: none;
+    color: #000;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e6c200;
+  }
+  
+  /* ========================================
+     PROGRESS BARS
+  ======================================== */
+  .progress {
+    height: 1.2rem;
+    border-radius: 8px;
+    background-color: #e9ecef;
+  }
+  
+  .progress-bar {
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
+  /* ========================================
+     BADGES
+  ======================================== */
+  .badge {
+    font-size: 0.95rem;
+    padding: 0.5em 0.75em;
+    border-radius: 1.5rem;
+  }
+  
+  .badge.bg-primary {
+    background-color: var(--primary);
+  }
+  
+  /* ========================================
+     SHADOWS AND CARDS
+  ======================================== */
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow);
+  }
+  
+  /* ========================================
+     DARK MODE
+  ======================================== */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .navbar,
+  body.dark-mode .btn-primary {
+    background-color: #1a1a1a !important;
+  }
+  
+  body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+  }
+  
+  body.dark-mode .card {
+    background-color: #2a2a2a;
+  }
+  
+  /* ========================================
+     CUSTOM UTILITIES
+  ======================================== */
+  .text-accent {
+    color: var(--accent);
+  }
+  
+  .bg-accent {
+    background-color: var(--accent);
+  }
+  
+  /* ========================================
+     SECTION HEADINGS
+  ======================================== */
+  .section-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+  }
+  
+  /* ========================================
+     ANIMATIONS (For AOS or smooth transitions)
+  ======================================== */
+  [data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+  }
+  
+  /* ========================================
+     MEDIA QUERIES
+  ======================================== */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }  
